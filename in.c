@@ -1,8 +1,9 @@
 #include<stdio.h>
 void sort(int *array);
+void read();
+int n,array[10];
 main(){
-  int array[7]={4,23,43,38,15,10,30};
-  int c,d,t,i;
+  int i;
   sort(array);
 
   for(i=0;i<7;i++)
@@ -24,4 +25,14 @@ void sort(int *array)
       d--;
     }
   }
+}
+void read()
+{
+  printf("enter size\n");
+  scanf("%d",&n);
+  printf("enter items");
+  for(i=0;i<n;i++)
+    {
+      scanf("%d",&array[i]);
+    }
 }
